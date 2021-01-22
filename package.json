@@ -134,11 +134,7 @@
     ]
   },
   "browserslist": [
-    "last 4 Chrome versions",
-    "last 4 Firefox versions",
-    "last 4 Safari versions",
-    "iOS >= 7",
-    "Android >= 4.4",
+    "defaults",
     "not IE 11",
     "not dead"
   ],
