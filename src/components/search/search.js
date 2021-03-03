@@ -5,7 +5,7 @@ import loadable from '@loadable/component';
 
 const LazyLoadComponent = loadable(() => import('./search-provider.js'));
 
-export default class SearchFacade extends React.Component {
+export default class SearchFacade extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = { loadSearch: false };
