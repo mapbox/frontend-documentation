@@ -38,6 +38,12 @@
   color: #3151df !important;
 }
 
+/* set code links to slightly darker blue */
+/* this rule does not apply to elements with the "anchor" class (which are headings) */
+.prose :not(.anchor) > a code {
+  color: #2b50f0;
+}
+
 /* set max-height for code examples */
 .prose pre[class*='language-'] {
   max-height: 300px;

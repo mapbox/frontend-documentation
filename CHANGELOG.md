@@ -1,8 +1,39 @@
 # Changelog
 
-## Performance
+## 3.3.1
 
-- Add Lazy component. [#392](https://github.com/mapbox/dr-ui/pull/392)
+- The `edit.css` prop is optional when displaying `Edit` in `CodeSnippet`. [#421](https://github.com/mapbox/dr-ui/pull/421)
+
+## 3.3.0
+
+- When `maxHeight` is set, move `Edit` buttons in `CodeSnippet` above the code. [#420](https://github.com/mapbox/dr-ui/pull/420)
+
+## 3.2.0
+
+- Add `pricing` theme to `Note`. [#416](https://github.com/mapbox/dr-ui/pull/416)
+
+## 3.1.0
+
+- Update prismjs, rehype-prism. [#411](https://github.com/mapbox/dr-ui/pull/411)
+- 🚨 Deprecates `HelpPage`, `NavigationDropdown`, `SectionedNavigation`, `TopbarSticker`, and `Topbar` components. [#407](https://github.com/mapbox/dr-ui/pull/407)
+- Make `css` optional in `Edit` and `CodeSnippet` components. [#293](https://github.com/mapbox/dr-ui/pull/293)
+- Make `filename` required for `CodeSnippetTitle`. [#413](https://github.com/mapbox/dr-ui/pull/413)
+
+## 3.0.1
+
+- Fix docs-prose.css to not apply blue color to code elements that are descendants of elements with `anchor` class (headings). [#409](https://github.com/mapbox/dr-ui/pull/409)
+
+## 3.0.0
+
+This release drops support for Internet Explorer and makes small performance and accessibility improvements. [#393](https://github.com/mapbox/dr-ui/issues/393)
+
+- 🚨 Remove support for IE 11.
+- 🚨 Rename `GLWrapper` as `MapWrapper`.
+  - You must define the `height` of the map. This will set the height of the loader to prevent a content layout shift after the map loads.
+- `DemoIframe` has a required `title` prop to provide a description of the iframe's content.
+- 🚨The `vimeoThumbnail` prop in `RelatedPage` no longer accepts a string. It must be an `AppropriateImage` instance. Example: `vimeoThumbnail='./img/map-image.jpg'` becomes `vimeoThumbnail={<AppropriateImage alt='' imageId='map-image' />}`
+- Add `position` prop to `Feedback` component to identify place on page.
+- Improve color contrast on syntax highlighting.
 
 ## 2.3.0
 
