@@ -8,7 +8,7 @@
     "Tag",
     "Browser",
     "DemoIframe",
-    "GLWrapper",
+    "MapWrapper",
     "Lazy",
     "Phone",
     "Video"
@@ -31,14 +31,9 @@
     "BackToTopButton",
     "OverviewHeader",
     "NavigationAccordion",
-    "NavigationDropdown",
     "ProductMenu",
-    "SectionedNavigation",
-    "Topbar",
-    "TopbarSticker",
     "Card",
     "CardContainer",
-    "HelpPage",
     "Breadcrumb",
     "AnalyticsShell",
     "ErrorBoundary"

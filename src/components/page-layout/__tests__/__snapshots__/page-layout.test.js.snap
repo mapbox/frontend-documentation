@@ -950,14 +950,14 @@ Array [
                       </h2>
                       <button
                         className="btn btn--s"
-                        id="dr-ui--feedback-page-yes"
+                        id="dr-ui--feedback-aside-page-yes"
                         onClick={[Function]}
                       >
                         Yes
                       </button>
                       <button
                         className="btn btn--s ml6"
-                        id="dr-ui--feedback-page-no"
+                        id="dr-ui--feedback-aside-page-no"
                         onClick={[Function]}
                       >
                         No
@@ -989,14 +989,14 @@ Array [
                     </h2>
                     <button
                       className="btn btn--s"
-                      id="dr-ui--feedback-page-yes"
+                      id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
                     >
                       Yes
                     </button>
                     <button
                       className="btn btn--s ml6"
-                      id="dr-ui--feedback-page-no"
+                      id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
                     >
                       No
@@ -1199,14 +1199,14 @@ Array [
                     </h2>
                     <button
                       className="btn btn--s"
-                      id="dr-ui--feedback-page-yes"
+                      id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
                     >
                       Yes
                     </button>
                     <button
                       className="btn btn--s ml6"
-                      id="dr-ui--feedback-page-no"
+                      id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
                     >
                       No
@@ -1616,14 +1616,14 @@ Array [
                       </h2>
                       <button
                         className="btn btn--s"
-                        id="dr-ui--feedback-page-yes"
+                        id="dr-ui--feedback-aside-page-yes"
                         onClick={[Function]}
                       >
                         Yes
                       </button>
                       <button
                         className="btn btn--s ml6"
-                        id="dr-ui--feedback-page-no"
+                        id="dr-ui--feedback-aside-page-no"
                         onClick={[Function]}
                       >
                         No
@@ -1671,14 +1671,14 @@ Array [
                     </h2>
                     <button
                       className="btn btn--s"
-                      id="dr-ui--feedback-page-yes"
+                      id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
                     >
                       Yes
                     </button>
                     <button
                       className="btn btn--s ml6"
-                      id="dr-ui--feedback-page-no"
+                      id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
                     >
                       No
@@ -2014,14 +2014,14 @@ Array [
                     </h2>
                     <button
                       className="btn btn--s"
-                      id="dr-ui--feedback-page-yes"
+                      id="dr-ui--feedback-bottom-page-yes"
                       onClick={[Function]}
                     >
                       Yes
                     </button>
                     <button
                       className="btn btn--s ml6"
-                      id="dr-ui--feedback-page-no"
+                      id="dr-ui--feedback-bottom-page-no"
                       onClick={[Function]}
                     >
                       No

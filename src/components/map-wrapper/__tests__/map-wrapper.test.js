@@ -1,8 +1,7 @@
-import React from 'react';
 import renderer from 'react-test-renderer';
-import { testCases } from './edit-test-cases.js';
+import { testCases, noRenderCases } from './map-wrapper-test-cases.js';
 
-describe('edit', () => {
+describe('map-wrapper', () => {
   describe(testCases.basic.description, () => {
     let testCase;
     let wrapper;
@@ -19,16 +18,30 @@ describe('edit', () => {
     });
   });
 
-  describe(testCases.noCss.description, () => {
+  describe(noRenderCases.ie.description, () => {
     let testCase;
     let wrapper;
     let tree;
 
     beforeEach(() => {
-      testCase = testCases.noCss;
-      wrapper = renderer.create(
-        React.createElement(testCase.component, testCase.props)
-      );
+      testCase = noRenderCases.ie;
+      wrapper = renderer.create(testCase.element);
+      tree = wrapper.toJSON();
+    });
+
+    test('renders as expected', () => {
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
+  describe(noRenderCases.webgl.description, () => {
+    let testCase;
+    let wrapper;
+    let tree;
+
+    beforeEach(() => {
+      testCase = noRenderCases.webgl;
+      wrapper = renderer.create(testCase.element);
       tree = wrapper.toJSON();
     });
 
