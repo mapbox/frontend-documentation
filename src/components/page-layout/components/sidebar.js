@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import NavigationAccordion from '../../navigation-accordion';
 import ProductMenu from '../../product-menu/product-menu';
-import Search from '../../search/search';
 import classnames from 'classnames';
 
 export default class Sidebar extends React.Component {
@@ -12,8 +11,7 @@ export default class Sidebar extends React.Component {
       navigation,
       location,
       children,
-      parentPath,
-      hideSearch
+      parentPath
     } = this.props;
     const { SITE, BASEURL } = constants;
     const { title, tag, path, navTabs } = navigation;
@@ -39,12 +37,6 @@ export default class Sidebar extends React.Component {
               homePage={`${BASEURL}/${path || ''}`}
             />
           </div>
-          {!hideSearch && (
-            /* set height to prevent content shift as Search component loads */
-            <div className="mb6 h36">
-              <Search {...this.props} site={SITE} />
-            </div>
-          )}
         </div>
         <div
           className={classnames('', {
@@ -85,6 +77,5 @@ Sidebar.propTypes = {
   constants: PropTypes.shape({
     SITE: PropTypes.string.isRequired,
     BASEURL: PropTypes.string.isRequired
-  }).isRequired,
-  hideSearch: PropTypes.bool
+  }).isRequired
 };
