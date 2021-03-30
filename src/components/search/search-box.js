@@ -12,7 +12,7 @@ class SearchBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalOpen: false,
+      modalOpen: this.props.modalOpen,
       useModal: !this.props.disableModal
     };
     this.openModal = this.openModal.bind(this);
@@ -345,7 +345,8 @@ SearchBox.propTypes = {
   segmentTrackEvent: PropTypes.string,
   overrideSearchTerm: PropTypes.string,
   themeCompact: PropTypes.bool,
-  emptyResultMessage: PropTypes.node
+  emptyResultMessage: PropTypes.node,
+  modalOpen: PropTypes.bool.isRequired
 };
 
 export default SearchBox;
