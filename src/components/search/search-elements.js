@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-export class SearchBox extends React.Component {
+export class SearchBox extends React.PureComponent {
   render() {
     const { background, narrow } = this.props;
     return (
@@ -46,7 +46,7 @@ SearchBox.propTypes = {
   narrow: PropTypes.bool
 };
 
-export class SearchInput extends React.Component {
+export class SearchInput extends React.PureComponent {
   render() {
     const { placeholder } = this.props;
     return (
