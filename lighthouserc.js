@@ -9,7 +9,7 @@ const filterByDiff = true;
 function getComponents() {
   let diff;
   if (filterByDiff) {
-    const { stdout } = execa.sync('git diff --name-only main src/components/', {
+    const { stdout } = execa.sync('git diff main --name-only src/components/', {
       shell: true
     });
     diff = stdout.split('\n');
