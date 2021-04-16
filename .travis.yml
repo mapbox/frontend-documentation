@@ -10,3 +10,7 @@ addons:
   chrome: stable
 before_install:
   - npm install -g @lhci/cli@0.7.x
+
+before_script:
+  - git remote set-branches --add origin main
+  - git fetch
