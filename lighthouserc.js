@@ -10,7 +10,7 @@ function getComponents() {
   let diff;
   if (filterByDiff) {
     const { stdout } = execa.sync(
-      'git diff origin/main --name-only -- src/components/',
+      'git diff origin/4.0.0 --name-only -- src/components/',
       {
         shell: true
       }

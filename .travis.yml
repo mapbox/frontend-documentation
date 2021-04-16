@@ -12,5 +12,5 @@ before_install:
   - npm install -g @lhci/cli@0.7.x
 
 before_script:
-  - git remote set-branches --add origin main
+  - git remote set-branches --add origin 4.0.0
   - git fetch
