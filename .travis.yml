@@ -3,6 +3,10 @@ sudo: false
 notifications:
   email: false
 scripts:
+  - npm test
+  - npm run build-docs
+  # run sitemap tests after build to assert sitemap is correct
+  - jest src/helpers/batfish/__tests__/sitemap.test.js
   - lhci autorun
 
 # dependencies of lhci:
@@ -10,7 +14,6 @@ addons:
   chrome: stable
 before_install:
   - npm install -g @lhci/cli@0.7.x
-
 before_script:
   - git remote set-branches --add origin 4.0.0
   - git fetch
