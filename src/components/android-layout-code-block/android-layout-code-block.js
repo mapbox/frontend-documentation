@@ -5,7 +5,7 @@ import CodeSnippetTitle from '../code-snippet-title/code-snippet-title';
 import { highlightXml } from '../highlight/xml';
 import { highlightThemeCss } from '../highlight/theme-css.js';
 
-export default class AndroidLayoutCodeBlock extends React.PureComponent {
+export default class AndroidLayoutCodeBlock extends React.Component {
   renderTitle = () => {
     const titleProps = {
       filename: this.props.filename,
