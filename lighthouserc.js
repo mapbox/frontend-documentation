@@ -4,7 +4,7 @@ const pascalCase = require('pascal-case');
 const execa = require('execa');
 
 // set true if lighthouse should only check files in the diff
-const filterByDiff = false;
+const filterByDiff = true;
 
 function getComponents() {
   let diff;
